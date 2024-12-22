@@ -37,7 +37,7 @@ namespace GameNet
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 40, 40));
         }
         // sql connection
-        private string connectionString = "Data Source=localhost;Initial Catalog=GAMENET;Integrated Security=True";
+        private string connectionString = "Data Source=(localdb)\\localhost;Initial Catalog=GAMENET;Integrated Security=True";
         public bool IsUsernameUnique(string username)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -58,11 +58,6 @@ namespace GameNet
         public frmRegister()
         {
             InitializeComponent();
-
-            errTimer = new Timer();
-            errTimer.Interval = 3000;
-            errTimer.Tick += register_timer_Tick;
-            
         }
 
         
@@ -113,64 +108,168 @@ namespace GameNet
             string username = txt_username.Text;
             string password = txt_password.Text;
             string repass = txt_repassword.Text;
-            bool is_equal = true;
-            
-            if (String.IsNullOrWhiteSpace(username))
-            {
-                lbl_error.Text = "نام کاربری را پر کنید";
-                lbl_error.Visible = true;
-                is_equal = false;
-                register_timer.Start();
 
-            } else if (String.IsNullOrWhiteSpace(password))
-            {
-                lbl_errorpass.Text = "رمز عبور مناسب وارد کنید";
-                lbl_errorpass.Visible = true;
-                is_equal = false;
-                register_timer.Start();
+            // ابتدا همه خطاها را مخفی می‌کنیم
+            lbl_error.Visible = lbl_errorpass.Visible = lbl_errRepass.Visible = false;
 
-            } else if (password != repass)
+            if (!String.IsNullOrWhiteSpace(username))
             {
-                lbl_errRepass.Text = "تکرار رمز عبور صحیح نیست";
-                lbl_errRepass.Visible = true;
-                is_equal = false;
-                register_timer.Start();
-            }
-            if (IsUsernameUnique(username))
-            {
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                lbl_error.Visible = false;
+                if (!String.IsNullOrWhiteSpace(password))
                 {
-                    // نوشتن درخواست به دیتا بیس و دادن پاارمتر ها به یک دیگر
-                    string query = "INSERT INTO admins (username , password) VALUES (@username , @password)";
-                    SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@username", username);
-                    command.Parameters.AddWithValue("@password", password);
-                    try
+                    lbl_errorpass.Visible = false;
+                    if (!String.IsNullOrWhiteSpace(repass))
                     {
-                        // در صورت درست بودن فلگ چک کردن مقادیر فیلد ها ارتباط و احرا دستورات برای دیتا بیس انجام میشود
-                        if (is_equal == true)
+                        lbl_errRepass.Visible = false;
+                        if (password == repass)
                         {
-                            connection.Open();
-                            command.ExecuteNonQuery();
-                            MessageBox.Show("کاربر با موفقیت ثبت شد");
-                            Form1 frmlogin = new Form1();
-                            this.Hide();
-                            frmlogin.Show();
+                            lbl_errRepass.Visible = false;
+                            if (IsUsernameUnique(username))
+                            {
+                                MessageBox.Show(username);
+                                //using (SqlConnection connection = new SqlConnection(connectionString))
+                                //{
+                                //    // نوشتن درخواست به دیتا بیس و دادن پاارمتر ها به یک دیگر
+                                //    string query = "INSERT INTO admins (username , password) VALUES (@username , @password)";
+                                //    SqlCommand command = new SqlCommand(query, connection);
+                                //    command.Parameters.AddWithValue("@username", username);
+                                //    command.Parameters.AddWithValue("@password", password);
+                                //    try
+                                //    {
+                                //        // در صورت درست بودن فلگ چک کردن مقادیر فیلد ها ارتباط و احرا دستورات برای دیتا بیس انجام میشود
+                                //        if (is_equal == true)
+                                //        {
+                                //            connection.Open();
+                                //            command.ExecuteNonQuery();
+                                //            MessageBox.Show("کاربر با موفقیت ثبت شد");
+                                //            Form1 frmlogin = new Form1();
+                                //            this.Hide();
+                                //            frmlogin.Show();
+                                //        }
+                                //    }
+
+                                //    catch (Exception ex)
+                                //    {
+                                //        MessageBox.Show("Error: " + ex.Message);
+                                //    }
+                                //}
+                            }
+                            else
+                            {
+                                MessageBox.Show("خطا", "invalid");
+                            }
+                        }
+                        else
+                        {
+                            lbl_errRepass.Text = "تکرار رمز عبور یکسان نیست";
+                            lbl_errRepass.Visible = true;
                         }
                     }
-
-                    catch (Exception ex)
+                    else
                     {
-                        MessageBox.Show("Error: " + ex.Message);
+                        lbl_errRepass.Text = "تکرار رمز عبور مناسب وارد کنید";
+                        lbl_errRepass.Visible = true;
+                    }
+                }
+                else
+                {
+                    lbl_errorpass.Text = "رمز عبور مناسب وارد کنید";
+                    lbl_errorpass.Visible = true;
+
+                    if (String.IsNullOrWhiteSpace(repass))
+                    {
+                        lbl_errRepass.Text = "تکرار رمز عبور مناسب وارد کنید";
+                        lbl_errRepass.Visible = true;
                     }
                 }
             }
             else
             {
-                MessageBox.Show("خطا", "invalid");
+                lbl_error.Text = "نام کاربری را پر کنید";
+                lbl_error.Visible = true;
+                
+
+                if (String.IsNullOrWhiteSpace(password))
+                {
+                    lbl_errorpass.Text = "رمز عبور مناسب وارد کنید";
+                    lbl_errorpass.Visible = true;
+
+                    if (String.IsNullOrWhiteSpace(repass))
+                    {
+                        lbl_errRepass.Text = "تکرار رمز عبور مناسب وارد کنید";
+                        lbl_errRepass.Visible = true;
+                    }
+                }
             }
-            
-       
+
+
+            // شروع تایمر برای خاموش کردن خطاها بعد از 5 ثانیه
+            if (lbl_error.Visible || lbl_errorpass.Visible || lbl_errRepass.Visible)
+            {
+                register_timer.Start();
+            }
+
+
+
+
+
+
+            //if (String.IsNullOrWhiteSpace(username))
+            //{
+            //    lbl_error.Text = "نام کاربری را پر کنید";
+            //    lbl_error.Visible = true;
+            //    is_equal = false;
+            //    register_timer.Start();
+
+            //} else if (String.IsNullOrWhiteSpace(password))
+            //{
+            //    lbl_errorpass.Text = "رمز عبور مناسب وارد کنید";
+            //    lbl_errorpass.Visible = true;
+            //    is_equal = false;
+            //    register_timer.Start();
+
+            //} else if (password != repass)
+            //{
+            //    lbl_errRepass.Text = "تکرار رمز عبور صحیح نیست";
+            //    lbl_errRepass.Visible = true;
+            //    is_equal = false;
+            //    register_timer.Start();
+            //}
+            //if (IsUsernameUnique(username))
+            //{
+            //    using (SqlConnection connection = new SqlConnection(connectionString))
+            //    {
+            //        // نوشتن درخواست به دیتا بیس و دادن پاارمتر ها به یک دیگر
+            //        string query = "INSERT INTO admins (username , password) VALUES (@username , @password)";
+            //        SqlCommand command = new SqlCommand(query, connection);
+            //        command.Parameters.AddWithValue("@username", username);
+            //        command.Parameters.AddWithValue("@password", password);
+            //        try
+            //        {
+            //            // در صورت درست بودن فلگ چک کردن مقادیر فیلد ها ارتباط و احرا دستورات برای دیتا بیس انجام میشود
+            //            if (is_equal == true)
+            //            {
+            //                connection.Open();
+            //                command.ExecuteNonQuery();
+            //                MessageBox.Show("کاربر با موفقیت ثبت شد");
+            //                Form1 frmlogin = new Form1();
+            //                this.Hide();
+            //                frmlogin.Show();
+            //            }
+            //        }
+
+            //        catch (Exception ex)
+            //        {
+            //            MessageBox.Show("Error: " + ex.Message);
+            //        }
+            //    }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("خطا", "invalid");
+            //}
+
+
         }
 
         private void minimize_btn_Click(object sender, EventArgs e)
@@ -185,7 +284,6 @@ namespace GameNet
 
         private void lbl_error_Click(object sender, EventArgs e)
         {
-            lbl_error.Visible = false;
 
         }
 

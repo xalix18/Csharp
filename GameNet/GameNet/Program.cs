@@ -16,7 +16,8 @@ namespace GameNet
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmAdminPanel());
+            //Application.Run(new frmAdminPanel());
+            Application.Run(new frmRegister());
         }
     }
 }

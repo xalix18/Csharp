@@ -28,7 +28,7 @@ namespace GameNet
         private bool AuthenticateUser(string username, string password)
         {
             // connection string
-            string connectionString = "Data Source=localhost;Initial Catalog=GAMENET;Integrated Security=True";
+            string connectionString = "Data Source=(localdb)\\localhost;Initial Catalog=GAMENET;Integrated Security=True";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try

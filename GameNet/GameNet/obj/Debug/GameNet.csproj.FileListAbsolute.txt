@@ -50,3 +50,15 @@ C:\Users\Mahan dev\Desktop\GAMENET\GameNet\cSharp\GameNet\GameNet\bin\Debug\Game
 C:\Users\Mahan dev\Desktop\GAMENET\GameNet\cSharp\GameNet\GameNet\bin\Debug\GameNet.exe
 C:\Users\Mahan dev\Desktop\GAMENET\GameNet\cSharp\GameNet\GameNet\bin\Debug\GameNet.pdb
 C:\Users\Mahan dev\Desktop\GAMENET\GameNet\cSharp\GameNet\GameNet\obj\Debug\GameNet.frmAdminPanel.resources
+E:\aaaaaaaaaaaaaaaaaaaaaaa\cSharp\GameNet\GameNet\bin\Debug\GameNet.exe.config
+E:\aaaaaaaaaaaaaaaaaaaaaaa\cSharp\GameNet\GameNet\bin\Debug\GameNet.exe
+E:\aaaaaaaaaaaaaaaaaaaaaaa\cSharp\GameNet\GameNet\bin\Debug\GameNet.pdb
+E:\aaaaaaaaaaaaaaaaaaaaaaa\cSharp\GameNet\GameNet\obj\Debug\GameNet.csproj.AssemblyReference.cache
+E:\aaaaaaaaaaaaaaaaaaaaaaa\cSharp\GameNet\GameNet\obj\Debug\GameNet.frmAdminPanel.resources
+E:\aaaaaaaaaaaaaaaaaaaaaaa\cSharp\GameNet\GameNet\obj\Debug\GameNet.frmRegister.resources
+E:\aaaaaaaaaaaaaaaaaaaaaaa\cSharp\GameNet\GameNet\obj\Debug\GameNet.Form1.resources
+E:\aaaaaaaaaaaaaaaaaaaaaaa\cSharp\GameNet\GameNet\obj\Debug\GameNet.Properties.Resources.resources
+E:\aaaaaaaaaaaaaaaaaaaaaaa\cSharp\GameNet\GameNet\obj\Debug\GameNet.csproj.GenerateResource.cache
+E:\aaaaaaaaaaaaaaaaaaaaaaa\cSharp\GameNet\GameNet\obj\Debug\GameNet.csproj.CoreCompileInputs.cache
+E:\aaaaaaaaaaaaaaaaaaaaaaa\cSharp\GameNet\GameNet\obj\Debug\GameNet.exe
+E:\aaaaaaaaaaaaaaaaaaaaaaa\cSharp\GameNet\GameNet\obj\Debug\GameNet.pdb

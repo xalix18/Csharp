@@ -57,11 +57,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Yekan Bakh ExtraBold", 35.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 35.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Indigo;
             this.label1.Location = new System.Drawing.Point(486, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 73);
+            this.label1.Size = new System.Drawing.Size(221, 54);
             this.label1.TabIndex = 0;
             this.label1.Text = "صفحه ورود";
             // 
@@ -77,10 +77,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Yekan Bakh", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(467, 204);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 31);
+            this.label2.Size = new System.Drawing.Size(108, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "نام کاربری :";
             // 
@@ -96,10 +96,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Yekan Bakh", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(467, 308);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 31);
+            this.label3.Size = new System.Drawing.Size(100, 25);
             this.label3.TabIndex = 7;
             this.label3.Text = "رمز عبور :";
             // 
@@ -109,7 +109,7 @@
             this.btn_login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_login.Font = new System.Drawing.Font("Yekan Bakh", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_login.ForeColor = System.Drawing.SystemColors.Control;
             this.btn_login.Location = new System.Drawing.Point(446, 429);
             this.btn_login.Name = "btn_login";
@@ -122,10 +122,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Yekan Bakh", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(438, 482);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 17);
+            this.label4.Size = new System.Drawing.Size(128, 13);
             this.label4.TabIndex = 9;
             this.label4.Text = "حساب کاربری نداری؟";
             // 
@@ -133,11 +133,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label6.Font = new System.Drawing.Font("Yekan Bakh", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DarkViolet;
             this.label6.Location = new System.Drawing.Point(533, 481);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 17);
+            this.label6.Size = new System.Drawing.Size(120, 13);
             this.label6.TabIndex = 11;
             this.label6.Text = "ساخت حساب کاربری";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -145,11 +145,11 @@
             // checkBox_pass
             // 
             this.checkBox_pass.AutoSize = true;
-            this.checkBox_pass.Font = new System.Drawing.Font("Yekan Bakh", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_pass.Location = new System.Drawing.Point(678, 402);
             this.checkBox_pass.Name = "checkBox_pass";
             this.checkBox_pass.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkBox_pass.Size = new System.Drawing.Size(114, 21);
+            this.checkBox_pass.Size = new System.Drawing.Size(134, 17);
             this.checkBox_pass.TabIndex = 17;
             this.checkBox_pass.Text = "نشان دادن رمز عبور";
             this.checkBox_pass.UseVisualStyleBackColor = true;
@@ -215,11 +215,11 @@
             // lbl_err
             // 
             this.lbl_err.AutoSize = true;
-            this.lbl_err.Font = new System.Drawing.Font("Yekan Bakh", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_err.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_err.ForeColor = System.Drawing.Color.Red;
             this.lbl_err.Location = new System.Drawing.Point(512, 138);
             this.lbl_err.Name = "lbl_err";
-            this.lbl_err.Size = new System.Drawing.Size(44, 20);
+            this.lbl_err.Size = new System.Drawing.Size(44, 16);
             this.lbl_err.TabIndex = 19;
             this.lbl_err.Text = "label7";
             this.lbl_err.Visible = false;
@@ -256,7 +256,7 @@
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
-            this.Text = "Form1";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Enter += new System.EventHandler(this.Form1_Enter);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);

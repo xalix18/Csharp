@@ -62,20 +62,20 @@
             // lbl_repassword
             // 
             this.lbl_repassword.AutoSize = true;
-            this.lbl_repassword.Font = new System.Drawing.Font("Yekan Bakh", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_repassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_repassword.Location = new System.Drawing.Point(68, 307);
             this.lbl_repassword.Name = "lbl_repassword";
-            this.lbl_repassword.Size = new System.Drawing.Size(115, 26);
+            this.lbl_repassword.Size = new System.Drawing.Size(127, 20);
             this.lbl_repassword.TabIndex = 22;
             this.lbl_repassword.Text = "تکرار رمز عبور :";
             // 
             // lbl_password
             // 
             this.lbl_password.AutoSize = true;
-            this.lbl_password.Font = new System.Drawing.Font("Yekan Bakh", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_password.Location = new System.Drawing.Point(68, 216);
             this.lbl_password.Name = "lbl_password";
-            this.lbl_password.Size = new System.Drawing.Size(77, 26);
+            this.lbl_password.Size = new System.Drawing.Size(85, 20);
             this.lbl_password.TabIndex = 20;
             this.lbl_password.Text = "رمز عبور :";
             // 
@@ -83,11 +83,11 @@
             // 
             this.lbl_login.AutoSize = true;
             this.lbl_login.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbl_login.Font = new System.Drawing.Font("Yekan Bakh", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_login.ForeColor = System.Drawing.Color.DarkCyan;
             this.lbl_login.Location = new System.Drawing.Point(155, 480);
             this.lbl_login.Name = "lbl_login";
-            this.lbl_login.Size = new System.Drawing.Size(65, 20);
+            this.lbl_login.Size = new System.Drawing.Size(63, 16);
             this.lbl_login.TabIndex = 25;
             this.lbl_login.Text = "وارد شوید";
             this.lbl_login.Click += new System.EventHandler(this.lbl_login_Click);
@@ -95,10 +95,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Yekan Bakh", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(38, 480);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(121, 20);
+            this.label5.Size = new System.Drawing.Size(131, 16);
             this.label5.TabIndex = 24;
             this.label5.Text = "حساب کاربری دارید؟";
             // 
@@ -109,7 +109,7 @@
             this.btn_create.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_create.FlatAppearance.BorderSize = 0;
             this.btn_create.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_create.Font = new System.Drawing.Font("Yekan Bakh", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_create.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_create.Location = new System.Drawing.Point(42, 410);
             this.btn_create.Name = "btn_create";
             this.btn_create.Size = new System.Drawing.Size(377, 37);
@@ -137,21 +137,21 @@
             // lbl_username
             // 
             this.lbl_username.AutoSize = true;
-            this.lbl_username.Font = new System.Drawing.Font("Yekan Bakh", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_username.Location = new System.Drawing.Point(66, 130);
             this.lbl_username.Name = "lbl_username";
-            this.lbl_username.Size = new System.Drawing.Size(94, 26);
+            this.lbl_username.Size = new System.Drawing.Size(92, 20);
             this.lbl_username.TabIndex = 18;
             this.lbl_username.Text = "نام کاربری :";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Yekan Bakh Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.label1.Location = new System.Drawing.Point(103, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(232, 57);
+            this.label1.Size = new System.Drawing.Size(201, 42);
             this.label1.TabIndex = 17;
             this.label1.Text = "صفحه ثبت نام";
             // 
@@ -230,11 +230,11 @@
             // lbl_error
             // 
             this.lbl_error.AutoSize = true;
-            this.lbl_error.Font = new System.Drawing.Font("Yekan Bakh", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_error.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_error.ForeColor = System.Drawing.Color.Red;
-            this.lbl_error.Location = new System.Drawing.Point(275, 194);
+            this.lbl_error.Location = new System.Drawing.Point(39, 194);
             this.lbl_error.Name = "lbl_error";
-            this.lbl_error.Size = new System.Drawing.Size(37, 17);
+            this.lbl_error.Size = new System.Drawing.Size(35, 13);
             this.lbl_error.TabIndex = 31;
             this.lbl_error.Text = "label2";
             this.lbl_error.Visible = false;
@@ -243,11 +243,11 @@
             // lbl_errorpass
             // 
             this.lbl_errorpass.AutoSize = true;
-            this.lbl_errorpass.Font = new System.Drawing.Font("Yekan Bakh", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_errorpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_errorpass.ForeColor = System.Drawing.Color.Red;
-            this.lbl_errorpass.Location = new System.Drawing.Point(275, 284);
+            this.lbl_errorpass.Location = new System.Drawing.Point(39, 282);
             this.lbl_errorpass.Name = "lbl_errorpass";
-            this.lbl_errorpass.Size = new System.Drawing.Size(37, 17);
+            this.lbl_errorpass.Size = new System.Drawing.Size(35, 13);
             this.lbl_errorpass.TabIndex = 32;
             this.lbl_errorpass.Text = "label2";
             this.lbl_errorpass.Visible = false;
@@ -255,18 +255,19 @@
             // lbl_errRepass
             // 
             this.lbl_errRepass.AutoSize = true;
-            this.lbl_errRepass.Font = new System.Drawing.Font("Yekan Bakh", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_errRepass.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_errRepass.ForeColor = System.Drawing.Color.Red;
-            this.lbl_errRepass.Location = new System.Drawing.Point(275, 371);
+            this.lbl_errRepass.Location = new System.Drawing.Point(39, 369);
             this.lbl_errRepass.Name = "lbl_errRepass";
-            this.lbl_errRepass.Size = new System.Drawing.Size(37, 17);
+            this.lbl_errRepass.Size = new System.Drawing.Size(35, 13);
             this.lbl_errRepass.TabIndex = 33;
             this.lbl_errRepass.Text = "label2";
             this.lbl_errRepass.Visible = false;
             // 
             // register_timer
             // 
-            this.register_timer.Tick += new System.EventHandler(this.register_timer_Tick_1);
+            this.register_timer.Interval = 3000;
+            this.register_timer.Tick += new System.EventHandler(this.register_timer_Tick);
             // 
             // frmRegister
             // 
