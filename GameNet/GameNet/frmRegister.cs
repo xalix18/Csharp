@@ -9,14 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Data.SqlClient;
-using System.Drawing;
+
 
 namespace GameNet
 {
     public partial class frmRegister : Form
     {
-        private Timer errTimer;
-
         private void clearInputs()
         {
             txt_password.Text = "";

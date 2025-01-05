@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Reflection;
+using GameNet;
+
 
 
 namespace GameNet
@@ -18,11 +21,13 @@ namespace GameNet
         private Timer errorTimer;
         public Form1()
         {
-            
             InitializeComponent();
             errorTimer = new Timer();
             errorTimer.Interval = 3000;
             errorTimer.Tick += err_timer_Tick;
+
+
+
         }
 
         private bool AuthenticateUser(string username, string password)

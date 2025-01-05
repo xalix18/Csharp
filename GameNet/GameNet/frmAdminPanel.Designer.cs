@@ -38,7 +38,6 @@
             this.txb_cstmoney5 = new System.Windows.Forms.TextBox();
             this.txb_csttime5 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.rad_cstfree5 = new System.Windows.Forms.RadioButton();
             this.rad_cstmoney5 = new System.Windows.Forms.RadioButton();
             this.rad_csttime5 = new System.Windows.Forms.RadioButton();
             this.controller_grp5 = new System.Windows.Forms.GroupBox();
@@ -59,7 +58,6 @@
             this.txb_cstmoney4 = new System.Windows.Forms.TextBox();
             this.txb_csttime4 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txb_cstfree4 = new System.Windows.Forms.RadioButton();
             this.rad_cstmoney4 = new System.Windows.Forms.RadioButton();
             this.rad_csttime4 = new System.Windows.Forms.RadioButton();
             this.controller_grp4 = new System.Windows.Forms.GroupBox();
@@ -80,7 +78,6 @@
             this.txb_cstmoneypc = new System.Windows.Forms.TextBox();
             this.txb_csttimepc = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.rad_cstfreepc = new System.Windows.Forms.RadioButton();
             this.rad_cstmoneypc = new System.Windows.Forms.RadioButton();
             this.rad_csttimepc = new System.Windows.Forms.RadioButton();
             this.grp_pc = new System.Windows.Forms.GroupBox();
@@ -154,7 +151,6 @@
             this.cost_grp5.Controls.Add(this.txb_cstmoney5);
             this.cost_grp5.Controls.Add(this.txb_csttime5);
             this.cost_grp5.Controls.Add(this.label2);
-            this.cost_grp5.Controls.Add(this.rad_cstfree5);
             this.cost_grp5.Controls.Add(this.rad_cstmoney5);
             this.cost_grp5.Controls.Add(this.rad_csttime5);
             this.cost_grp5.Enabled = false;
@@ -176,6 +172,7 @@
             this.btn_stop5.TabIndex = 24;
             this.btn_stop5.Text = "پایان";
             this.btn_stop5.UseVisualStyleBackColor = true;
+            this.btn_stop5.Click += new System.EventHandler(this.btn_stop5_Click);
             // 
             // btn_start5
             // 
@@ -222,19 +219,6 @@
             this.label2.Size = new System.Drawing.Size(58, 16);
             this.label2.TabIndex = 14;
             this.label2.Text = "بر اساس";
-            // 
-            // rad_cstfree5
-            // 
-            this.rad_cstfree5.AutoSize = true;
-            this.rad_cstfree5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rad_cstfree5.Location = new System.Drawing.Point(133, 120);
-            this.rad_cstfree5.Margin = new System.Windows.Forms.Padding(5);
-            this.rad_cstfree5.Name = "rad_cstfree5";
-            this.rad_cstfree5.Size = new System.Drawing.Size(48, 20);
-            this.rad_cstfree5.TabIndex = 12;
-            this.rad_cstfree5.TabStop = true;
-            this.rad_cstfree5.Text = "آزاد";
-            this.rad_cstfree5.UseVisualStyleBackColor = true;
             // 
             // rad_cstmoney5
             // 
@@ -409,7 +393,6 @@
             this.cost_grp4.Controls.Add(this.txb_cstmoney4);
             this.cost_grp4.Controls.Add(this.txb_csttime4);
             this.cost_grp4.Controls.Add(this.label8);
-            this.cost_grp4.Controls.Add(this.txb_cstfree4);
             this.cost_grp4.Controls.Add(this.rad_cstmoney4);
             this.cost_grp4.Controls.Add(this.rad_csttime4);
             this.cost_grp4.Enabled = false;
@@ -479,20 +462,6 @@
             this.label8.Size = new System.Drawing.Size(58, 16);
             this.label8.TabIndex = 14;
             this.label8.Text = "بر اساس";
-            // 
-            // txb_cstfree4
-            // 
-            this.txb_cstfree4.AutoSize = true;
-            this.txb_cstfree4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_cstfree4.ForeColor = System.Drawing.Color.MediumBlue;
-            this.txb_cstfree4.Location = new System.Drawing.Point(133, 120);
-            this.txb_cstfree4.Margin = new System.Windows.Forms.Padding(5);
-            this.txb_cstfree4.Name = "txb_cstfree4";
-            this.txb_cstfree4.Size = new System.Drawing.Size(48, 20);
-            this.txb_cstfree4.TabIndex = 12;
-            this.txb_cstfree4.TabStop = true;
-            this.txb_cstfree4.Text = "آزاد";
-            this.txb_cstfree4.UseVisualStyleBackColor = true;
             // 
             // rad_cstmoney4
             // 
@@ -683,7 +652,6 @@
             this.cost_grppc.Controls.Add(this.txb_cstmoneypc);
             this.cost_grppc.Controls.Add(this.txb_csttimepc);
             this.cost_grppc.Controls.Add(this.label13);
-            this.cost_grppc.Controls.Add(this.rad_cstfreepc);
             this.cost_grppc.Controls.Add(this.rad_cstmoneypc);
             this.cost_grppc.Controls.Add(this.rad_csttimepc);
             this.cost_grppc.Enabled = false;
@@ -743,20 +711,6 @@
             this.label13.Size = new System.Drawing.Size(58, 16);
             this.label13.TabIndex = 14;
             this.label13.Text = "بر اساس";
-            // 
-            // rad_cstfreepc
-            // 
-            this.rad_cstfreepc.AutoSize = true;
-            this.rad_cstfreepc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rad_cstfreepc.ForeColor = System.Drawing.Color.Green;
-            this.rad_cstfreepc.Location = new System.Drawing.Point(133, 120);
-            this.rad_cstfreepc.Margin = new System.Windows.Forms.Padding(5);
-            this.rad_cstfreepc.Name = "rad_cstfreepc";
-            this.rad_cstfreepc.Size = new System.Drawing.Size(48, 20);
-            this.rad_cstfreepc.TabIndex = 12;
-            this.rad_cstfreepc.TabStop = true;
-            this.rad_cstfreepc.Text = "آزاد";
-            this.rad_cstfreepc.UseVisualStyleBackColor = true;
             // 
             // rad_cstmoneypc
             // 
@@ -891,7 +845,6 @@
         private System.Windows.Forms.TextBox txb_cstmoney5;
         private System.Windows.Forms.TextBox txb_csttime5;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton rad_cstfree5;
         private System.Windows.Forms.RadioButton rad_cstmoney5;
         private System.Windows.Forms.RadioButton rad_csttime5;
         private System.Windows.Forms.GroupBox controller_grp5;
@@ -914,7 +867,6 @@
         private System.Windows.Forms.TextBox txb_cstmoney4;
         private System.Windows.Forms.TextBox txb_csttime4;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.RadioButton txb_cstfree4;
         private System.Windows.Forms.RadioButton rad_cstmoney4;
         private System.Windows.Forms.RadioButton rad_csttime4;
         private System.Windows.Forms.GroupBox controller_grp4;
@@ -932,7 +884,6 @@
         private System.Windows.Forms.TextBox txb_cstmoneypc;
         private System.Windows.Forms.TextBox txb_csttimepc;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.RadioButton rad_cstfreepc;
         private System.Windows.Forms.RadioButton rad_cstmoneypc;
         private System.Windows.Forms.RadioButton rad_csttimepc;
         private System.Windows.Forms.GroupBox grp_pc;
